@@ -405,7 +405,8 @@ public class TextInputRichEditText extends TextInputEditText
                         int newLen = ssb.getSpanEnd(mTouchedSpans[i]) - ssb.getSpanStart(mTouchedSpans[i]);
                         if (newLen < mSpanLength[i])
                         {
-                            ssb.replace(ssb.getSpanStart(mTouchedSpans[i]), ssb.getSpanEnd(mTouchedSpans[i]), "");
+                            if(ssb.getSpanStart(mTouchedSpans[i]) > 0 && ssb.getSpanEnd(mTouchedSpans[i]) > 0 && ssb.getSpanEnd(mTouchedSpans[i]) != ssb.getSpanEnd(mTouchedSpans[i]))
+                                ssb.replace(ssb.getSpanStart(mTouchedSpans[i]), ssb.getSpanEnd(mTouchedSpans[i]), "");
                         }
                     }
                 mTouchedSpans = null;
