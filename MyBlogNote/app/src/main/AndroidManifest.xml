@@ -39,6 +39,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".activity.ViewerActivity"
             android:label="@string/act_viewer"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d1db68736e5c56704324e579948a65be305c518f" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

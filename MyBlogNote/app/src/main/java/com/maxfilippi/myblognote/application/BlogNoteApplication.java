@@ -3,8 +3,10 @@ package com.maxfilippi.myblognote.application;
 import android.app.Application;
 import android.util.Log;
 
+import com.crashlytics.android.Crashlytics;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.maxfilippi.myblognote.core.CoreEngine;
+import io.fabric.sdk.android.Fabric;
 
 /**
  * Created by Max on 1/12/17.
@@ -38,10 +40,13 @@ public class BlogNoteApplication extends Application
     {
         Log.d(TAG, "Init Singletons");
 
+        // Initialize Fabric SDK for Crashlytics and Answers
+        Fabric.with(this, new Crashlytics());
+
         // Initialize cache/perf library for images
         Fresco.initialize(this);
 
-        // Initialize the first instance of RKMoteur
+        // Initialize the first instance of CoreEngine
         CoreEngine.shared(getApplicationContext());
     }
 
