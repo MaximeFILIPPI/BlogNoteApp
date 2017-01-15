@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_title_ascending"
+            android:icon="@mipmap/ic_format_size_black_24dp"
+            android:title="Sort by Title (Ascending)" />
+        <item
+            android:id="@+id/nav_title_descending"
+            android:icon="@mipmap/ic_text_fields_black_24dp"
+            android:title="Sort by Title (Descending)" />
+        <item
+            android:id="@+id/nav_date_ascending"
+            android:icon="@mipmap/ic_filter_1_black_24dp"
+            android:title="Sort by Date (Ascending)" />
+        <item
+            android:id="@+id/nav_date_descending"
+            android:icon="@mipmap/ic_filter_7_black_24dp"
+            android:title="Sort by Date (Descending)" />
+    </group>
+
+    <item android:title="Contact me">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send email" />
+        </menu>
+    </item>
+
+</menu>

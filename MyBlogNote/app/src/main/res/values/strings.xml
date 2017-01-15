@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyBlogNote</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Sort by</string>
+    <string name="input_title">Title</string>
+    <string name="input_date">date</string>
+    <string name="input_content">Content</string>
+
+    <string name="act_edit">Note Editor</string>
+    <string name="act_viewer">Note Viewer</string>
+
+
+
+    <string name="action_order_title_ascending">Title (Ascending)</string>
+    <string name="action_order_title_descending">Title (Descending)</string>
+    <string name="action_order_date_ascending">Date (Ascending)</string>
+    <string name="action_order_date_descending">Date (Descending)</string>
+    <string name="action_add_image">Add Image</string>
+
+</resources>

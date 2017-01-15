@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maxfilippi.myblognote">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.BlogNoteApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:supportsRtl="true"
+        android:theme="@style/SimpleMaterialTheme">
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SimpleSplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SimpleMaterialTheme" />
+        <activity
+            android:name=".activity.EditNoteActivity"
+            android:label="@string/act_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/SimpleMaterialTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.ViewerActivity"
+            android:label="@string/act_viewer"/>
+    </application>
+
+</manifest>

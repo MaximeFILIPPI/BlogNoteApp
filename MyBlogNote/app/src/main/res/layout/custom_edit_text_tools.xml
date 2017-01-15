@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/BLOGNOTE_COLOR_BLUE"
+    android:layout_gravity="top"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/custom_tools_mode_bold"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="2.5dp"
+            android:text="B"
+            android:background="?attr/selectableItemBackground"
+            android:alpha="0.4"/>
+
+
+        <Button
+            android:id="@+id/custom_tools_mode_italic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:text="I"
+            android:textStyle="italic"
+            android:background="?attr/selectableItemBackground"
+            android:alpha="0.4"/>
+
+
+        <Button
+            android:id="@+id/custom_tools_mode_underline"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:text="U"
+            android:textStyle="normal"
+            android:background="?attr/selectableItemBackground"
+            android:alpha="0.4"/>
+
+        <Button
+            android:id="@+id/custom_tools_mode_highlight"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:text=" "
+            android:background="?attr/selectableItemBackground"
+            android:alpha="0.4"
+            />
+
+        <Button
+            android:id="@+id/custom_tools_mode_align_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:text=" "
+            android:background="?attr/selectableItemBackground"
+            android:alpha="0.4"/>
+
+
+        <Button
+            android:id="@+id/custom_tools_mode_align_right"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:text=" "
+            android:background="?attr/selectableItemBackground"
+            android:alpha="0.4"/>
+
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>

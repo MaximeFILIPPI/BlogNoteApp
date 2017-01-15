@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+
+
+    <DatePicker
+        android:id="@+id/dialog_date_fragment_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/dialog_date_fragment_layout_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/dialog_date_fragment_picker">
+
+        <Button
+            android:id="@+id/dialog_date_fragment_button_cancel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:background="?attr/selectableItemBackground"/>
+
+
+        <Button
+            android:id="@+id/dialog_date_fragment_button_confirm"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:background="?attr/selectableItemBackground"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
